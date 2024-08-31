@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8SampleProject", "DotNet8SampleProject\DotNet8SampleProject.csproj", "{0B1F20F7-5A86-45B6-B20D-526BA0A034DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooSimulator", "ZooSimulator\ZooSimulator.csproj", "{B33ACFD1-8379-4832-8445-AB70D3909A90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0B1F20F7-5A86-45B6-B20D-526BA0A034DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B1F20F7-5A86-45B6-B20D-526BA0A034DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B1F20F7-5A86-45B6-B20D-526BA0A034DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B1F20F7-5A86-45B6-B20D-526BA0A034DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B33ACFD1-8379-4832-8445-AB70D3909A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33ACFD1-8379-4832-8445-AB70D3909A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33ACFD1-8379-4832-8445-AB70D3909A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33ACFD1-8379-4832-8445-AB70D3909A90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
