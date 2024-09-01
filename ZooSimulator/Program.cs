@@ -11,10 +11,14 @@ builder.Services.ConfigureHttpJsonOptions(options =>
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer("Server=localhost;Database=master;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=True;TrustServerCertificate=True"));
 /*
-Dependency Injection (DI) is a design pattern and a core principle in software engineering, particularly in object-oriented programming, to achieve Inversion of Control (IoC) between classes and their dependencies. In simple terms, DI allows for injecting dependencies (services, objects) into a class rather than the class creating them internally. This leads to more modular, testable, and maintainable code.
+Dependency Injection (DI) is a design pattern and a core principle in software engineering, particularly in object-oriented programming, 
+to achieve Inversion of Control (IoC) between classes and their dependencies. 
+In simple terms, DI allows for injecting dependencies (services, objects) into a class rather than the class creating them internally.
+This leads to more modular, testable, and maintainable code.
 
 Core Concepts of Dependency Injection
-Dependency: A dependency is any object that another object requires to function. For example, if a class Car needs an instance of Engine to operate, Engine is a dependency of Car.
+Dependency: A dependency is any object that another object requires to function.
+ For example, if a class Car needs an instance of Engine to operate, Engine is a dependency of Car.
 Injection: Injection is the process of passing the dependencies to a class instead of the class creating them. This can be done via:
 Constructor Injection: Dependencies are provided through the class constructor.
 Property Injection: Dependencies are set through public properties of the class.
@@ -22,7 +26,8 @@ Method Injection: Dependencies are passed through methods of the class.
 Benefits of Dependency Injection
 Decoupling: DI reduces the tight coupling between a class and its dependencies, making the code more flexible and easier to change.
 Testability: Since dependencies can be injected, it becomes easier to swap real implementations with mock objects or stubs during unit testing.
-Maintainability: DI promotes single responsibility and adherence to the SOLID principles, particularly the Dependency Inversion Principle, making the codebase easier to maintain.
+Maintainability: DI promotes single responsibility and adherence to the SOLID principles, particularly the Dependency Inversion Principle,
+ making the codebase easier to maintain.
 
 Three Main Lifecycles
 Transient (Short-Lived)
@@ -31,11 +36,13 @@ When to use: When the service doesn’t need to remember anything (stateless). F
 Example: Think of a disposable cup. You use it once and then throw it away.
 Scoped (Lives During a Request)
 What it means: The service is created once per request and reused within that request.
-When to use: When you want the service to keep information while handling one request but throw it away afterward. Useful in web applications where you want to keep track of user data during a single page load.
+When to use: When you want the service to keep information while handling one request but throw it away afterward.
+ Useful in web applications where you want to keep track of user data during a single page load.
 Example: Imagine a water bottle you use throughout the day but replace the next day.
 Singleton (Lives as Long as the Program)
 What it means: The service is created once when the program starts and stays the same for the entire life of the program.
-When to use: When the service needs to remember things or is expensive to create, like a settings manager that loads configuration data once and reuses it.
+When to use: When the service needs to remember things or is expensive to create, 
+like a settings manager that loads configuration data once and reuses it.
 Example: Think of a refrigerator that you use all the time and it keeps working for a long time.
 How to Decide Which to Use?
 Transient: Use when you don’t need to keep data, like a quick helper.

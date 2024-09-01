@@ -12,11 +12,13 @@ private protected: Accessible only within the same class or in derived classes t
 2. Classes and Objects
 Class: A class is like a blueprint for creating objects. It defines properties (attributes) and methods (actions) that the objects created from the class can have.
 Example: If Car is a class, it defines what a car should be like—its color, make, model, etc., and what it can do—drive, stop, honk, etc.
-Object: An object is an instance of a class. It’s like creating a specific car from the Car blueprint. Each car (object) can have different properties (like color) but can do the same actions.
+Object: An object is an instance of a class. It’s like creating a specific car from the Car blueprint. Each car (object) can have different properties (like color) 
+but can do the same actions.
 Example: myCar might be an object of the Car class, and it might be a red Toyota.
 */
 public abstract class Animal(MovementType movementType, string name) //primary constructor
 {
+    // refer data types - int, string, bool - value types and reference types
     public int Id { get; private set; }
 
     private string _name = name;

@@ -12,7 +12,7 @@ public class ZooService(IAnimalRepo animalRepo) : IZooService
         return _animalRepo.GetAnimalsByMovementType(movementType);
     }
 
-    public bool AddAnimalToZoo(Animal animal)
+    public bool AddAnimalToZoo(Animal animal) //explain functions/methods
     {
         var isAnimalPresent = _animalRepo.AnimalExists(animal.Name);
 
@@ -20,7 +20,7 @@ public class ZooService(IAnimalRepo animalRepo) : IZooService
         {
             _animalRepo.AddAnimalToZoo(animal);
             return true;
-        } // refer to conditional checks(while, else if, switch) and why we omit else here
+        } // refer to conditional checks(while, else if, switch) and why we omit else here and mention for while e foreach
 
         return false;
     }
